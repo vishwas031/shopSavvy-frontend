@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# ShopSavvy-backend
+This project is an E-Commerce platform developed using the MERN stack (MongoDB, Express.js, React, Node.js). It provides a user-friendly interface for both buyers and sellers, allowing buyers to browse products, select attributes, add to cart, and make simulated payments using Stripe. Sellers can manage product categories, add products, update stock, and perform CRUD operations on their products.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Available Scripts
+- User-friendly buyer interface with product attribute selection and cart functionality.
+- Simulated payment processing using Stripe for buyer checkout.
+- Seller dashboard for category and product management.
+- Secure user authentication and authorization.
+- Responsive design for optimal viewing on various devices.
 
-In the project directory, you can run:
+## Installation and Setup
+Clone the frontend and backend repositories, cd into them individually, and then follow the below mentioned steps for setting up backend and frontend separately.
 
-### `npm start`
+Frontend:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    - Fork the repository.
+    - Clone the repository git clone https://github.com/vishwas031/shopSavvy-frontend.git
+    - Open the folder in which you cloned the repository.
+    - Run *npm install*
+    
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Backend:
 
-### `npm test`
+    - Fork the repository.
+    - Clone the repository git clone https://github.com/vishwas031/shopSavvy-backend.git
+    - Open the folder in which you cloned the repository.
+    - Run *npm install*
+    - Create a .env file.
+Create .env file in the backend and insert these values:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```
+    PORT=BACKEND_PORT || 5000
+    URL=MONGODB_URI
+    JWT_SECRET=JWT_SECRET
+    CLIENT=CLIENT_URL
+    STRIPE_KEY=YOUR_STRIPE_PRIVATE_KEY
+   ```
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Start the server: In the `backend`, run `npm start server`.
+2. Start the client: In the `frontend` directory, run `npm start`.
+3. Access the application in your browser at `http://localhost:3000`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+<img src="./public/1.png" style="margin-top: 30px"  align='center'>
+<img src="./public/1.2.png" style="margin-top: 30px"  align='center'>
+<img src="./public/2.png" style="margin-top: 30px"  align='center'>
+<img src="./public/3.png" style="margin-top: 30px"  align='center'>
+<img src="./public/4.png" style="margin-top: 30px"  align='center'>
+<img src="./public/5.png" style="margin-top: 30px"  align='center'>
+<img src="./public/6.png" style="margin-top: 30px"  align='center'>
